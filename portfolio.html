@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qnet</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-map-vacation-planning-trip-abroad-flaticons-flat-flat-icons-2.png"
+      type="image/icon type"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./portfolio-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-map-vacation-planning-trip-abroad-flaticons-flat-flat-icons-2.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Qnet
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <div class="nav-container">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="navbar-brand"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop2"
+                  onclick="show()"
+                >
+                  <img
+                    src="https://img.icons8.com/ios/344/search--v1.png"
+                    alt="Bootstrap"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/344/external-world-location-xnimrodx-lineal-xnimrodx.png"
+                    alt="Bootstrap"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="navbar-brand"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop1"
+                >
+                  <img
+                    src="https://img.icons8.com/external-good-lines-kalash/344/external-person-human-body-anatomy-good-lines-kalash.png"
+                    alt="Bootstrap"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row content">
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              >
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row content">
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal4"
+              >
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal5"
+              >
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal6"
+              >
+                Launch demo modal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal-list">
+      <div
+        class="modal fade"
+        id="modal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="modal-body col">
+                  <img
+                    src="https://picsum.photos/100/100"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="modal-body col last">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    excepturi, architecto earum exercitationem veniam magni, cum
+                    sunt autem blanditiis aperiam officiis aut maiores tenetur
+                    libero assumenda fugiat explicabo placeat quae dignissimos
+                    sapiente ullam? Reprehenderit incidunt, repellendus illo
+                    tempore delectus quas?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="modal-body col">
+                  <img
+                    src="https://picsum.photos/100/100"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="modal-body col last">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    excepturi, architecto earum exercitationem veniam magni, cum
+                    sunt autem blanditiis aperiam officiis aut maiores tenetur
+                    libero assumenda fugiat explicabo placeat quae dignissimos
+                    sapiente ullam? Reprehenderit incidunt, repellendus illo
+                    tempore delectus quas?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="modal-body col">
+                  <img
+                    src="https://picsum.photos/100/100"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="modal-body col last">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    excepturi, architecto earum exercitationem veniam magni, cum
+                    sunt autem blanditiis aperiam officiis aut maiores tenetur
+                    libero assumenda fugiat explicabo placeat quae dignissimos
+                    sapiente ullam? Reprehenderit incidunt, repellendus illo
+                    tempore delectus quas?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal4"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="modal-body col">
+                  <img
+                    src="https://picsum.photos/100/100"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="modal-body col last">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    excepturi, architecto earum exercitationem veniam magni, cum
+                    sunt autem blanditiis aperiam officiis aut maiores tenetur
+                    libero assumenda fugiat explicabo placeat quae dignissimos
+                    sapiente ullam? Reprehenderit incidunt, repellendus illo
+                    tempore delectus quas?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal5"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="modal-body col">
+                  <img
+                    src="https://picsum.photos/100/100"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="modal-body col last">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    excepturi, architecto earum exercitationem veniam magni, cum
+                    sunt autem blanditiis aperiam officiis aut maiores tenetur
+                    libero assumenda fugiat explicabo placeat quae dignissimos
+                    sapiente ullam? Reprehenderit incidunt, repellendus illo
+                    tempore delectus quas?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal6"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="modal-body col">
+                  <img
+                    src="https://picsum.photos/100/100"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="modal-body col last">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    excepturi, architecto earum exercitationem veniam magni, cum
+                    sunt autem blanditiis aperiam officiis aut maiores tenetur
+                    libero assumenda fugiat explicabo placeat quae dignissimos
+                    sapiente ullam? Reprehenderit incidunt, repellendus illo
+                    tempore delectus quas?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-holder">
+        <div class="footer row">
+          <div class="footer col-2">
+            <a class="body-link" href="#">
+              <div class="logo-holder">
+                <h2>
+                  <em>THE <br />KNOWLEDGE <br />OF WHERE</em>
+                </h2>
+              </div>
+            </a>
+            <ul type="none" class="sosmed">
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png"
+                      alt="facebook"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/25/25347.png"
+                      alt="twitter"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png"
+                      alt="linkedin"
+                    /></div
+                ></a>
+              </li>
+              <br />
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/3938/3938084.png"
+                      alt="reddit"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png"
+                      alt="instagram"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/254/254412.png"
+                      alt="youtube"
+                    /></div
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer col">
+            <div class="row list">
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <h5>© Property of Nanda</h5>
+      </div>
+    </footer>
+
+    <!-- modal form -->
+    <div
+      class="modal fade"
+      id="staticBackdrop1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Form Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body row form">
+            <div class="modal-body col form">
+              <div class="form-content">
+                <label for="namaOwner" class="form-label">Nama Owner</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaOwner"
+                  pattern="[A-Za-z\\s]*"
+                  required
+                />
+              </div>
+
+              <div class="form-content">
+                <label for="namaProyek" class="form-label">Nama Proyek</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaProyek"
+                  required
+                />
+              </div>
+
+              <div class="form-content">
+                <label for="categoryProyek" class="form-label"
+                  >Kategori Proyek</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="categoryProyek"
+                  required
+                >
+                  <option value="consultation">Consultation</option>
+                  <option value="planning">Planning</option>
+                  <option value="survey">Survey</option>
+                </select>
+              </div>
+              <div class="form-content">
+                <label for="nilaiProyek" class="form-label">Nilai Proyek</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Rp</span>
+                  <input
+                    id="nilaiProyek"
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    required
+                  />
+                  <span class="input-group-text">,00-</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body col form">
+              <div id="map"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              class="btn btn-primary"
+              onclick="submit()"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal display -->
+
+    <div
+      class="modal fade"
+      id="staticBackdrop2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Daftar Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body row form">
+            <div class="modal-body col form display">
+              <div class="row input">
+                <div class="col input">
+                  <input
+                    type="text"
+                    placeholder="filter nama proyek"
+                    oninput="filterName(this.value)"
+                    id="search"
+                  />
+                </div>
+                <div class="col input form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckChecked"
+                    onclick="filterValue()"
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckChecked"
+                    >Ascending/Descending</label
+                  >
+                </div>
+              </div>
+              <div class="table" style="overflow-y: scroll">
+                <table class="table table-striped">
+                  <thead>
+                    <tr id="header">
+                      <th scope="col">Nama Project</th>
+                      <th scope="col">Owner</th>
+                      <th scope="col">Kategori</th>
+                      <th scope="col">Nilai</th>
+                      <th scope="col">Lokasi</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal-body col form display">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=0,1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe
+                  ><a href="https://putlocker-is.org">putlocker</a><br /><style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      height: 500px;
+                      width: 600px;
+                    }</style
+                  ><a href="https://www.embedgooglemap.net"
+                    >google map in wordpress</a
+                  ><style>
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      height: 210px;
+                      width: 500px;
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qnet</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-map-vacation-planning-trip-abroad-flaticons-flat-flat-icons-2.png"
+      type="image/icon type"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./home-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-map-vacation-planning-trip-abroad-flaticons-flat-flat-icons-2.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Qnet
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <div class="nav-container">
+                  <a class="nav-link" href="#">Home</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="navbar-brand"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop2"
+                  onclick="show()"
+                >
+                  <img
+                    src="https://img.icons8.com/ios/344/search--v1.png"
+                    alt="Bootstrap"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/344/external-world-location-xnimrodx-lineal-xnimrodx.png"
+                    alt="Bootstrap"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="navbar-brand"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop1"
+                >
+                  <img
+                    src="https://img.icons8.com/external-good-lines-kalash/344/external-person-human-body-anatomy-good-lines-kalash.png"
+                    alt="Bootstrap"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="first-content">
+        <div class="image-container first">
+          <img
+            class="background-image"
+            src="https://media.istockphoto.com/photos/green-ripening-soybean-field-agricultural-landscape-picture-id1318149876?b=1&k=20&m=1318149876&s=170667a&w=0&h=7zPZi1Zz1Sz2ytW53qwu_wb0jvbIZvlBPMinzoy5lbk="
+            alt="background image"
+          />
+        </div>
+        <div class="row first">
+          <div class="col-6 first-row left">
+            <div class="text-container">
+              <h1 class="first-text">
+                Make a difference with geospatial analytics
+              </h1>
+            </div>
+            <div class="explore-button">
+              <button type="button" class="btn btn-primary">
+                Explore our ordered product →
+              </button>
+            </div>
+          </div>
+          <div class="col-6 first-row right">
+            <div class="image-container second">
+              <div class="farmer-image">
+                <img
+                  class="drone"
+                  src="https://images.unsplash.com/photo-1555009306-9e3c5b6a66e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                  alt="drone image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="second-content row">
+        <div class="col-7 left">
+          <h1 class="display-5">
+            Pioneering <a class="body-link" href="#">Qnet</a>, powerful mapping
+            and analytics consultant
+          </h1>
+        </div>
+        <div class="col right">
+          <a class="body-link second" href="#">
+            <div class="second-link">
+              <h3>PRODUCT SPOTLIGHT</h3>
+              <p>
+                Qnet Solutions: The largest collection of geospatial solutions →
+              </p>
+            </div>
+            <img
+              class="img-second-right"
+              src="https://images.unsplash.com/photo-1476385822777-70eabacbd41f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fG1hcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+              alt="city map"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="third-content row">
+        <div class="col-6 left">
+          <a class="body-link" href="#">
+            <div class="layer">
+              <h1>About Qnet</h1>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 right">
+          <a class="body-link" href="#">
+            <div class="layer">
+              <h1>What is Geospatial</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="border-bottom"></div>
+    </section>
+
+    <footer>
+      <div class="footer-holder">
+        <div class="footer row">
+          <div class="footer col-2">
+            <a class="body-link" href="#">
+              <div class="logo-holder">
+                <h2>
+                  <em>THE <br />KNOWLEDGE <br />OF WHERE</em>
+                </h2>
+              </div>
+            </a>
+            <ul type="none" class="sosmed">
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png"
+                      alt="facebook"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/25/25347.png"
+                      alt="twitter"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png"
+                      alt="linkedin"
+                    /></div
+                ></a>
+              </li>
+              <br />
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/3938/3938084.png"
+                      alt="reddit"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png"
+                      alt="instagram"
+                    /></div
+                ></a>
+              </li>
+              <li class="sosmed-item">
+                <a href="#"
+                  ><div class="icon-holder">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/254/254412.png"
+                      alt="youtube"
+                    /></div
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer col">
+            <div class="row list">
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col list">
+                <div class="title"><h6>Qgis</h6></div>
+                <hr />
+                <div class="content">
+                  <ul type="none">
+                    <li><a href="" class="body-link">Lorem, ipsum.</a></li>
+                    <li>
+                      <a href="" class="body-link">Nobis, consectetur?</a>
+                    </li>
+                    <li><a href="" class="body-link">Nisi, aperiam?</a></li>
+                    <li>
+                      <a href="" class="body-link">Tempore, obcaecati.</a>
+                    </li>
+                    <li><a href="" class="body-link">Sit, cum!</a></li>
+                    <li><a href="" class="body-link">Architecto, dicta.</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <h5>© Property of Nanda</h5>
+      </div>
+    </footer>
+
+    <!-- modal form -->
+    <div
+      class="modal fade"
+      id="staticBackdrop1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Form Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body row form">
+            <div class="modal-body col form">
+              <div class="form-content">
+                <label for="namaOwner" class="form-label">Nama Owner</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaOwner"
+                  pattern="[A-Za-z\\s]*"
+                  required
+                />
+              </div>
+
+              <div class="form-content">
+                <label for="namaProyek" class="form-label">Nama Proyek</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaProyek"
+                  required
+                />
+              </div>
+
+              <div class="form-content">
+                <label for="categoryProyek" class="form-label"
+                  >Kategori Proyek</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="categoryProyek"
+                  required
+                >
+                  <option value="consultation">Consultation</option>
+                  <option value="planning">Planning</option>
+                  <option value="survey">Survey</option>
+                </select>
+              </div>
+              <div class="form-content">
+                <label for="nilaiProyek" class="form-label">Nilai Proyek</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Rp</span>
+                  <input
+                    id="nilaiProyek"
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    required
+                  />
+                  <span class="input-group-text">,00-</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body col form">
+              <div id="map"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              class="btn btn-primary"
+              onclick="submit()"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal display -->
+
+    <div
+      class="modal fade"
+      id="staticBackdrop2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Daftar Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body row form">
+            <div class="modal-body col form display">
+              <div class="row input">
+                <div class="col input">
+                  <input type="text" placeholder="filter nama proyek" oninput="filterName(this.value)" id="search"/>
+                </div>
+                <div class="col input form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckChecked"
+                    onclick="filterValue()"
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckChecked"
+                    >Ascending/Descending</label
+                  >
+                </div>
+              </div>
+              <div class="table" style="overflow-y: scroll">
+                <table class="table table-striped">
+                  <thead>
+                    <tr id="header">
+                      <th scope="col">Nama Project</th>
+                      <th scope="col">Owner</th>
+                      <th scope="col">Kategori</th>
+                      <th scope="col">Nilai</th>
+                      <th scope="col">Lokasi</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal-body col form display">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=0,1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe
+                  ><a href="https://putlocker-is.org">putlocker</a><br /><style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      height: 500px;
+                      width: 600px;
+                    }</style
+                  ><a href="https://www.embedgooglemap.net"
+                    >google map in wordpress</a
+                  ><style>
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      height: 210px;
+                      width: 500px;
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

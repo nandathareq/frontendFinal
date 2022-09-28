@@ -1,0 +1,102 @@
+body {
+  overflow-x: hidden;
+}
+
+.body-link {
+  text-decoration: none;
+}
+
+/* styling header */
+
+.navbar {
+  border-bottom: 1px solid rgb(172, 176, 180);
+  padding: 0px 0px;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid rgba(28, 134, 229, 0.7);
+}
+
+.modal-dialog.modal-dialog-centered {
+  max-width: 1000px;
+  height: 400px;
+}
+
+.modal-body.col.form {
+  width: 50%;
+  padding: 0;
+}
+
+.modal-body.col.form.display {
+  height: 200px;
+}
+
+.form-content {
+  margin: 10px;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+}
+
+/* styling footer */
+
+.footer-holder {
+  height: 300px;
+  padding: 50px;
+  border-top: 1px solid rgb(172, 176, 180);
+}
+
+.footer.col-2 {
+  width: fit-content;
+}
+
+.logo-holder h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo-holder {
+  border: 7px solid rgba(0, 0, 0, 0.3);
+  border-style: dashed;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+}
+
+.logo-holder:hover {
+  border: 7px solid rgba(0, 0, 0, 0.7);
+  border-style: dashed;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sosmed-item {
+  display: inline-block;
+}
+
+.icon-holder img {
+  width: 30px;
+  margin: 8px;
+}
+
+.sosmed {
+  position: absolute;
+  left: 35px;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.content li a {
+  margin: 3px;
+  font-size: 15px;
+  color: grey;
+}
+
+.copyright {
+  text-align: right;
+  padding-right: 30px;
+  color: grey;
+}

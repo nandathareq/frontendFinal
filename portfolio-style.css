@@ -1,0 +1,31 @@
+/* card style */
+.row.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 350px;
+  padding: 0;
+}
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.button {
+  text-align: right;
+  position: absolute;
+}
+
+.modal-body {
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal-body.last {
+  margin: 10px 40px;
+  padding: auto;
+}
