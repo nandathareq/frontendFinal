@@ -50,7 +50,12 @@
                 <a class="nav-link" href="#contactUs">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#aboutUs"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./portfolio.html">Portofolio</a>
@@ -563,6 +568,61 @@
             >
               Close
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal about us -->
+    <div
+      class="modal fade"
+      id="aboutUs"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">About Us</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="col-3">
+              <img
+                src="https://picsum.photos/200/200"
+                class="card-img-top"
+                alt="..."
+                width="100%"
+              />
+            </div>
+            <div class="col content">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
           </div>
         </div>
       </div>
